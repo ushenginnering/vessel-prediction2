@@ -27,39 +27,39 @@ import joblib
 app = Flask(__name__)
 
 #run_with_ngrok(app)
-model = joblib.load("Vessel_Prediction/model_bi.pkl")
+model = joblib.load("/model_bi.pkl")
 # model = pickle.load(open('weight_pred_model.pkl', 'rb'))
 # Ush Engineering\Projects\hero_project\Vessel_Prediction\
 
-model1 = joblib.load("Vessel_Prediction/model_gc.pkl")
+model1 = joblib.load("/model_gc.pkl")
 
-model2 = joblib.load("Vessel_Prediction/model_gp.pkl")
+model2 = joblib.load("/model_gp.pkl")
 
-model3 = joblib.load("Vessel_Prediction/model_mt.pkl")
+model3 = joblib.load("/model_mt.pkl")
 
-model4 = joblib.load("Vessel_Prediction/model_mtgc.pkl")
+model4 = joblib.load("/model_mtgc.pkl")
 
-model5 = joblib.load("Vessel_Prediction/model_st.pkl")
+model5 = joblib.load("/model_st.pkl")
 
-model6 = joblib.load("Vessel_Prediction/model_wt.pkl")
+model6 = joblib.load("/model_wt.pkl")
 
-model7 = joblib.load("Vessel_Prediction/model_zc.pkl")
+model7 = joblib.load("/model_zc.pkl")
 
-DAYS = joblib.load("Vessel_Prediction/daysbi.pkl")
+DAYS = joblib.load("/daysbi.pkl")
 
-DAYS1 = joblib.load("Vessel_Prediction/daysgc.pkl")
+DAYS1 = joblib.load("/daysgc.pkl")
 
-DAYS2 = joblib.load("Vessel_Prediction/daysgp.pkl")
+DAYS2 = joblib.load("/daysgp.pkl")
 
-DAYS3 = joblib.load("Vessel_Prediction/daysmt.pkl")
+DAYS3 = joblib.load("/daysmt.pkl")
 
-DAYS4 = joblib.load("Vessel_Prediction/daysmtgc.pkl")
+DAYS4 = joblib.load("/daysmtgc.pkl")
 
-DAYS5 = joblib.load("Vessel_Prediction/daysst.pkl")
+DAYS5 = joblib.load("/daysst.pkl")
 
-DAYS6 = joblib.load("Vessel_Prediction/dayswt.pkl")
+DAYS6 = joblib.load("/dayswt.pkl")
 
-DAYS7 = joblib.load("Vessel_Prediction/dayszc.pkl")
+DAYS7 = joblib.load("/dayszc.pkl")
 
 @app.route('/')
 def home():
