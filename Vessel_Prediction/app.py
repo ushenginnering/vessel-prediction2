@@ -27,7 +27,7 @@ import joblib
 app = Flask(__name__)
 
 #run_with_ngrok(app)
-model = joblib.load("/workspace/Vessel_Prediction/model_bi.pkl")
+model = joblib.load("/Vessel_Prediction/model_bi.pkl")
 # model = pickle.load(open('weight_pred_model.pkl', 'rb'))
 # Ush Engineering\Projects\hero_project\Vessel_Prediction\
 
