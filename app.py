@@ -61,16 +61,16 @@ DAYS6 = joblib.load("/workspace/Vessel_Prediction/dayswt.pkl")
 
 DAYS7 = joblib.load("/workspace/Vessel_Prediction/dayszc.pkl")
 
-@app.route('/')
+@app.route('/',methods=['POST'])
 def home():
     return render_template('/startup2-1.0.0/iindex.html')
     # return redirect(url_for('/startup2-1.0.0/iindex.html'))
 
-@app.route('/quote')
+@app.route('/quote',methods=['POST'])
 def quote():
     return render_template('/startup2-1.0.0/quote.html')
 
-@app.route('/contact')
+@app.route('/contact',methods=['POST'])
 def contact():
     return render_template('/startup2-1.0.0/contact.html')
 
