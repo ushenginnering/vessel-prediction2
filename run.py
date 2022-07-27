@@ -1,3 +1,7 @@
+# import sys
+# if sys.version_info[0:2] != (3, 8):
+#     raise Exception('Requires python 3.8')
+
 from app import app
  
 if __name__ == "__main__":
